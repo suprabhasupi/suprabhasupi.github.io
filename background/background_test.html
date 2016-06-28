@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+		height: 30em;
+	}
+		.background_img{
+			height: 100%;
+			width: 100%;
+			background: url('img-1.jpg');
+		}
+	</style>
+</head>
+<body>
+<div class ="background_img"></div>
+</body>
+<script src="jquery-2.1.4.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var isFirefox = typeof InstallTrigger !== 'undefined';
+		if(isFirefox){
+		$('.background_img').css('background', 'url(img-2.jpg)');
+	}
+	});
+</script>
+</html>
