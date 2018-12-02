@@ -1,0 +1,54 @@
+table.diamondsweeper-board td {
+  padding: 0;
+  border: 1px solid black; }
+
+#container {
+  display: flex;
+  justify-content: center;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+
+.cell {
+  height: 50px;
+  width: 50px;
+  background-size: 50px 50px;
+  transition: 0.5s; }
+  .cell.diamond {
+    background-image: url(./diamond.png);
+    background-color: #fffc3d; }
+  .cell.arrow {
+    background-image: url(./arrow.png); }
+  .cell.unknown {
+    background-image: url(./question.png);
+    background-color: antiquewhite; }
+  .cell.up {
+    transform: rotate(-90deg); }
+  .cell.down {
+    transform: rotate(90deg); }
+  .cell.left {
+    transform: rotate(180deg); }
+  .cell.no-near-diamond {
+    background-image: url(./no-diamond.png); }
+
+h3 {
+  margin: 15px 0;
+  font-size: 25px; }
+
+ul {
+  list-style: none;
+  padding-left: 10px; }
+  ul li {
+    display: flex;
+    justify-content: left;
+    align-items: center; }
+    ul li img {
+      width: 25px;
+      margin-right: 15px; }
+    ul li p {
+      margin: 10px 0; }
+
+@media screen and (max-width: 48em) {
+  .cell {
+    height: 35px;
+    width: 35px;
+    background-size: contain;
+    background-repeat: no-repeat; } }
