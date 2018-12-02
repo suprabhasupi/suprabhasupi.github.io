@@ -1,0 +1,28 @@
+{
+  "presets": ["es2015",
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-flow-strip-types",
+    [
+      "module-resolver", {
+        "alias": {
+          "~": "./src"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": ["babel-plugin-dynamic-import-node"]
+    }
+  }
+}

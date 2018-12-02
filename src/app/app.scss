@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+// @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800');
+// font-family: 'Raleway', sans-serif;
+
+// @import url('https://fonts.googleapis.com/css?family=Tajawal:400,500,700');
+// font-family: 'Tajawal', sans-serif;
+
+// @import url('https://fonts.googleapis.com/css?family=Carme');
+// font-family: 'Carme', sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+// font-family: 'Sawarabi Mincho', sans-serif;
+
+// @import url('https://fonts.googleapis.com/css?family=Forum');
+// font-family: 'Forum', cursive;
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,500,700');
+// font-family: 'Noto Serif KR', sans-serif;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // text-align: center;
+  color: #2c3e50;
+}

@@ -1,0 +1,91 @@
+.projects-wrapper {
+  margin-top: 5em;
+  padding-top: 2em;
+  .title {
+    font-size: 50px;
+    width: 40%;
+    margin: 25px auto;
+    padding-right: 75px;
+    span {
+      border-top: 3px solid black;
+    }
+  }
+  .all-project-list {
+    .project-list {
+      width: 75%;
+      margin: 5em auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      .alpha-target {
+        mask-image: url(../../assets/img/project.svg);
+        mask-mode: alpha;
+        mask-repeat: no-repeat;
+        mask-size: 85%;
+        mask-position: 20px;
+        -webkit-mask-image: url(../../assets/img/project.svg);
+        -webkit-mask-mode: alpha;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: 85%;
+        -webkit-mask-position: 20px;
+        width: 325px;
+      }
+      .project-info {
+        width: 50%;
+        p {
+          color: black;
+        }
+        .project-title {
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+        a {
+          border: 1px solid #3bd174;
+          outline: none;
+          padding: 15px 65px;
+          font-size: 14px;
+          border-radius: 25px;
+          background: #3bd174;
+          color: white;
+          width: 200px;
+          text-decoration: none;
+          font-weight: 600;
+          position: relative;
+          top: 25px;
+          transition: 0.5s;
+          &:hover {
+            background: #48e591;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .projects-wrapper {
+    margin: 70px 0;
+    .title {
+      width: 75%;
+      font-size: 40px;
+      padding-right: 0;
+    }
+    .all-project-list {
+      .project-list {
+        margin-bottom: 10em;
+        width: 90%;
+        .project-info {
+          width: 90%;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
